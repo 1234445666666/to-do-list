@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+.main__form {
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.main__input {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  max-width: 500px;
+  transition: background-color 200ms ease-in-out;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.main__btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main__btn2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main__btn3 {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.7rem;
+  margin: 15px 0;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.removeLi {
+  color: red;
+  cursor: pointer;
+  text-decoration: line-through;
+
+}

@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+    gap: 20px;
+}
+
+.header h1 .dark{
+    color: black;
+
+}
+
+.header p .dark {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.header__span {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.theme-dark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
