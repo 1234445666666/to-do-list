@@ -133,8 +133,15 @@ body.dark {
   width: 100%;
 }
 
+.main__wrapper {
+  font-size: 1.7rem;
+  font-weight: bold;
+
+}
+
 .removeLi {
-  color: red;
+  color: gray;
   cursor: pointer;
   text-decoration: line-through;
+  transition: 0.4s all ease;`
 }
