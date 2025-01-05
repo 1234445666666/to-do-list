@@ -1,3 +1,9 @@
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,10 +11,6 @@
   gap: 20px;
 }
 
-body.dark {
-  background-color: black;
-  color: white;
-}
 
 .main__form {
   display: flex;
