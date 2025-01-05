@@ -31,6 +31,48 @@ body.dark {
   border-radius: 20px;
   outline: none;
   cursor: pointer;
+  position: relative;
+  transition: 0.4s all ease;
+}
+
+.main__input:hover {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
+  border: none;
+  transition: 0.4s all ease;
+}
+
+.main__input::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: lightgray;
+  transition: width 0.4s ease-in-out;
+}
+
+.main__input:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.main__input::placeholder {
+  color: black;
+  transition: background-color 200ms ease-in-out;
+}
+
+.main__input:active {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
+  border: none;
+  transition: 0.4s all ease;
+}
+
+.main__input:focus {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
 }
 
 .main__btn {
@@ -38,6 +80,7 @@ body.dark {
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
+  background-color: white;
 }
 
 .main__btn2 {
@@ -45,6 +88,8 @@ body.dark {
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
+  background-color: white;
+
 }
 
 .main__btn3 {
@@ -52,6 +97,29 @@ body.dark {
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
+  background-color: white;
+
+}
+
+.main__btn:hover {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
+  border: none;
+  transition: 0.4s all ease;
+}
+
+.main__btn2:hover {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
+  border: none;
+  transition: 0.4s all ease;
+}
+
+.main__btn3:hover {
+  background-color: lightgray;
+  transition: background-color 200ms ease-in-out;
+  border: none;
+  transition: 0.4s all ease;
 }
 
 .main__list {
@@ -68,5 +136,4 @@ body.dark {
   color: red;
   cursor: pointer;
   text-decoration: line-through;
-
 }

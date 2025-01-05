@@ -21,8 +21,11 @@ const list = document.querySelector(".main__list");
 
 const wrapper = document.querySelector(".main__wrapper");
 
-btnAdd.addEventListener("click", (event) => {
+btnAdd.addEventListener("click", () => {
   const li = document.createElement("li");
+//   const chexbox = document.createElement("input");
+//   chexbox.type = "checkbox";
+//   li.appendChild(chexbox);
   li.textContent = Input.value;
   list.appendChild(li);
   Input.value = "";
