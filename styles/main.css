@@ -3,14 +3,12 @@ body.dark {
   color: white;
 }
 
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
 
 .main__form {
   display: flex;
@@ -25,15 +23,6 @@ body.dark {
   border: 1px solid black;
 }
 
-.main__input:active {
-  
-
-}
-
-.main__input:focus {
- 
-}
-
 .main__add {
   background: #03d8b6;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -43,7 +32,6 @@ body.dark {
   border-left: none;
   font-size: 16px;
   font-family: sans-serif;
- 
 }
 
 .main__removeOne {
@@ -52,7 +40,6 @@ body.dark {
   padding: 5px;
   cursor: pointer;
   background-color: white;
-
 }
 
 .main__removeAll {
@@ -61,7 +48,13 @@ body.dark {
   padding: 5px;
   cursor: pointer;
   background-color: white;
+}
 
+.main__removeOne:hover,
+.main__removeAll:hover {
+  background-color: #03d8b6;
+  color: white;
+  transition: 0.4s all ease;
 }
 
 .main__list {
@@ -77,7 +70,6 @@ body.dark {
 .main__wrapper {
   font-size: 1.7rem;
   font-weight: bold;
-
 }
 
 .removeLi {
