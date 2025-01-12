@@ -21,79 +21,32 @@ body.dark {
 }
 
 .main__input {
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-  max-width: 500px;
-  transition: background-color 200ms ease-in-out;
-  width: 100%;
-  height: 40px;
-  padding-left: 10px;
+  padding: 8px;
   border: 1px solid black;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  transition: 0.4s all ease;
-}
-
-.main__input:hover {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
-  border: none;
-  transition: 0.4s all ease;
-}
-
-.main__input::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: lightgray;
-  transition: width 0.4s ease-in-out;
-}
-
-.main__input:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.main__input::placeholder {
-  color: black;
-  transition: background-color 200ms ease-in-out;
 }
 
 .main__input:active {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
-  border: none;
-  transition: 0.4s all ease;
+  
+
 }
 
 .main__input:focus {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
+ 
 }
 
-.main__btn {
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px;
-  cursor: pointer;
-  background-color: white;
+.main__add {
+  background: #03d8b6;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  text-transform: uppercase;
+  color: white;
+  border-left: none;
+  font-size: 16px;
+  font-family: sans-serif;
+ 
 }
 
-.main__btn2 {
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px;
-  cursor: pointer;
-  background-color: white;
-
-}
-
-.main__btn3 {
+.main__removeOne {
   border: 1px solid black;
   border-radius: 20px;
   padding: 5px;
@@ -102,25 +55,13 @@ body.dark {
 
 }
 
-.main__btn:hover {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
-  border: none;
-  transition: 0.4s all ease;
-}
+.main__removeAll {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
 
-.main__btn2:hover {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
-  border: none;
-  transition: 0.4s all ease;
-}
-
-.main__btn3:hover {
-  background-color: lightgray;
-  transition: background-color 200ms ease-in-out;
-  border: none;
-  transition: 0.4s all ease;
 }
 
 .main__list {
