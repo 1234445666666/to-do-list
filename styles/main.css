@@ -34,21 +34,18 @@ body.dark {
   font-family: sans-serif;
 }
 
-.main__removeOne {
-  border: 1px solid black;
+.main__removeOne , .main__removeAll {
+  border: 1px solid #03d8b6;
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
   background-color: white;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+
 }
 
-.main__removeAll {
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px;
-  cursor: pointer;
-  background-color: white;
-}
 
 .main__removeOne:hover,
 .main__removeAll:hover {

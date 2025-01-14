@@ -66,7 +66,12 @@ btnRemoveALL.addEventListener("click", () => {
 
 const numberTasks = document.querySelector(".header__span");
 
-numberTasks.textContent = list.childElementCount;
+
+numberTasks.addEventListener("click", () => {
+  numberTasks.textContent = list.childElementCount;
+  saveData();
+});
+
 
 btnAdd.addEventListener("click", () => {
   count = 0;
