@@ -34,6 +34,10 @@ btnAdd.addEventListener("click", () => {
   } else {
     alert("Введите задачу");
   }
+  for (let i = 0; i < list.children.length; i++) {
+    list.children[i].classList.add("li__style");
+  }
+
   saveData();
 });
 
@@ -66,12 +70,10 @@ btnRemoveALL.addEventListener("click", () => {
 
 const numberTasks = document.querySelector(".header__span");
 
-
 numberTasks.addEventListener("click", () => {
   numberTasks.textContent = list.childElementCount;
   saveData();
 });
-
 
 btnAdd.addEventListener("click", () => {
   count = 0;

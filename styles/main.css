@@ -1,8 +1,3 @@
-body.dark {
-  background-color: black;
-  color: white;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -34,7 +29,8 @@ body.dark {
   font-family: sans-serif;
 }
 
-.main__removeOne , .main__removeAll {
+.main__removeOne,
+.main__removeAll {
   border: 1px solid #03d8b6;
   border-radius: 20px;
   padding: 5px;
@@ -43,9 +39,7 @@ body.dark {
   width: 100px;
   height: 45px;
   text-align: center;
-
 }
-
 
 .main__removeOne:hover,
 .main__removeAll:hover {
@@ -75,3 +69,9 @@ body.dark {
   text-decoration: line-through;
   transition: 0.4s all ease;
 }
+
+.li__style {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
