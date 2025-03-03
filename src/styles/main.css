@@ -1,0 +1,147 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; 
+}
+
+.main__input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px; 
+
+  &::placeholder {
+    color: #aaa;
+  }
+
+  &:focus {
+    border-color: #666;
+  }
+}
+
+.main__add {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px; 
+
+  &:hover {
+    background-color: #43a047;
+  }
+}
+
+.main__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__removeAll {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px; 
+
+  &:hover {
+    background-color: #ff665b;
+  }
+}
+
+.main__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.main__list .icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 200ms ease-in-out;
+}
+
+.icon__done {
+  background-image: url("../icons/zelenaja-galochka.png");
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon__delete {
+  background-image: url("../icons/delete.png");
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    max-width: 100%;
+  }
+
+  .main__input {
+    width: 100%;
+  }
+
+  .main__add {
+    width: 100%;
+  }
+
+  .main__btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
